@@ -1,0 +1,145 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.card-section {
+  padding: 30px 0;
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    .card__type-1 {
+      padding: 40px;
+    }
+
+    .card__type-2 {
+      padding: 40px;
+
+      .subtitle {
+        margin: 0 0 15px;
+      }
+    }
+
+    .card__type-3 {
+      position: relative;
+
+      .card-3__wrap {
+        padding: 40px;
+
+        .subtitle {
+          margin: 0 0 15px;
+
+          .card-link-3 {
+          }
+          .card-link-3::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 200px;
+            left: 0;
+            top: 0;
+          }
+        }
+      }
+    }
+
+    .card__type-3:before {
+      content: "";
+      display: block;
+      max-width: 100%;
+      height: 200px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .card__type-3_img1::before {
+      background-image: url(../src/images/cats.webp);
+    }
+
+    .card {
+      background-color: white;
+
+      .text {
+        margin: 0;
+      }
+    }
+
+    .card__type-4 {
+      padding: 130px 40px 40px;
+      background-position: 40px 40px;
+      background-repeat: no-repeat;
+      background-size: 60px;
+    }
+
+    .card__type-4_icon1 {
+      background-image: url(../src/images/clock.svg);
+    }
+
+    .card__type-5 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      padding: 40px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("../src/images/cats.webp");
+      color: white;
+
+      .text {
+        margin-bottom: 20px;
+      }
+    }
+
+    .card__type-6 {
+      border-radius: 16px;
+
+      .card-article {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .card__type-6-img {
+          display: block;
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          flex-shrink: 0;
+          border-radius: 16px 0 ;
+        }
+
+        .card__type-6-bottom {
+          padding: 40px;
+          display: flex;
+          flex-basis: 100%;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start;
+
+          .card__type-6-bottom-text {
+            margin-bottom: 20px;
+
+            .price-rating {
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 10px;
+            }
+
+            .subtitle {
+              margin: 0 0 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
